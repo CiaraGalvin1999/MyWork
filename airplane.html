@@ -1,0 +1,26 @@
+<html> 
+<head>
+<script>
+	
+	var leftPos=600;
+	var topPos=100;
+	
+function move() {
+var x = Math.random()*300;
+var y = Math.random()*100;
+leftPos = x;
+topPos = y;
+document.getElementById("divAirplane").style.left = leftPos+"px";
+document.getElementById("divAirplane").style.top = topPos+"px";
+	}
+</script>
+
+</head>
+
+	<body style="background-image:url(sky.png)"; onclick="move();">>
+
+		<div id='divAirplane' style='position:absolute; left:600px; top:100px'>
+			<img id='imgAirplane' src='airplane.png'>
+		</div>
+	</body>
+</html>
